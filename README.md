@@ -19,7 +19,12 @@ pip install random
 # Getting Started
 Find it in IndexFramework/IF/__init__.py
 # Mind Map
-https://share.mindmanager.com/#publish/zqGzzUHzsYRetcqy8Zoko_qSB9DGuv0Sm3UjOBkP
-![]
-# Process
-![](https://github.com/nkuzhengwt/Spyder_cta/blob/master/process.png)
+https://share.mindmanager.com/#publish/zqGzzUHzsYRetcqy8Zoko_qSB9DGuv0Sm3UjOBkP  
+![](https://github.com/nkuzhengwt/IndexFramework/blob/master/pics/Asset%20allocation.jpeg)
+# Example Results
+Equity Progression  
+![](https://github.com/nkuzhengwt/IndexFramework/blob/master/pics/Equity%20Progression.png)  
+Return Histogram  
+![](https://github.com/nkuzhengwt/IndexFramework/blob/master/pics/Return%20Histogram.png)  
+Weights  
+![](https://github.com/nkuzhengwt/IndexFramework/blob/master/pics/Weights.png)  
