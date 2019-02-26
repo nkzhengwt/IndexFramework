@@ -17,7 +17,7 @@ pip install abc
 pip install random
 ```
 # Getting Started
-Find it in IndexFramework/IF/__init__.py
+Find it in IndexFramework/IF/\_\_init\_\_.py
 # Mind Map
 https://share.mindmanager.com/#publish/zqGzzUHzsYRetcqy8Zoko_qSB9DGuv0Sm3UjOBkP  
 ![](https://github.com/nkuzhengwt/IndexFramework/blob/master/pics/Asset%20allocation.jpeg)
