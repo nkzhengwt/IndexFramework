@@ -18,9 +18,9 @@ data = pd.DataFrame(np.random.uniform(0,900,size=(900, 4)), columns=list('ABCD')
                     index=[pd.Timestamp(datetime.utcnow().date() + timedelta(days=-i)) \
                            for i in range(900,0,-1)])
 
-#s = Strategy('s1', [RunMonthly(),SelectAll(),WeighERC(),Rebalance()])
-#s = Strategy('s1', [RunQuarterly(),SelectAll(),WeighInvVol(),Rebalance()])
-#s = Strategy('s1', [RunQuarterly(),SelectRandomly(),WeighMeanVar(),Rebalance()],['A','B'])
+#s = Strategy('s1', [RunAfterDays(20),RunMonthly(),SelectAll(),WeighERC(),Rebalance()])
+#s = Strategy('s1', [RunAfterDays(20),RunQuarterly(),SelectAll(),WeighInvVol(),Rebalance()])
+#s = Strategy('s1', [RunAfterDays(20),RunQuarterly(),SelectRandomly(),WeighMeanVar(),Rebalance()],['A','B'])
 
 
 mom_s = Strategy('mom_s', [RunMonthly(),SelectAll(),SelectMomentum(1),WeighEqually(), \
@@ -28,11 +28,11 @@ mom_s = Strategy('mom_s', [RunMonthly(),SelectAll(),SelectMomentum(1),WeighEqual
                     ['A', 'B','C','D'])
 
 
-master = Strategy('master', [RunMonthly(),SelectAll(),WeighEqually(),Rebalance()], \
+s = Strategy('master', [RunMonthly(),SelectAll(),WeighEqually(),Rebalance()], \
                     [mom_s, 'A','C'])
 test = Backtest(s, data)
 res = run(test)
 res.plot()
 res.display()
 res.plot_histogram()
-#res.plot_security_weights()
+res.plot_security_weights()

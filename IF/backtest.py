@@ -193,7 +193,7 @@ class Backtest(object):
         self.strategy.update(self.dates[0])
 
         # and for the backtest loop, start at date 1
-        for dt in self.dates[2:]:
+        for dt in self.dates[:]:
             # update progress bar
             if self.progress_bar:
                 bar.update()
