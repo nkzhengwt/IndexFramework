@@ -6,7 +6,7 @@ from utils import fmtp, fmtn, fmtpn, get_freq_name
 import numpy as np
 import pandas as pd
 from pandas.core.base import PandasObject
-# from tabulate import tabulate
+from tabulate import tabulate
 import sklearn.manifold
 import sklearn.cluster
 import sklearn.covariance
